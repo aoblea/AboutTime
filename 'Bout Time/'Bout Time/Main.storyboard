@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="FTe-IT-JO7">
+    <device id="retina4_0" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="Dnq-3Q-p6K">
+            <objects>
+                <viewController id="FTe-IT-JO7" customClass="ViewController" customModule="_Bout_Time" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="sTc-zw-qmS">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="dxt-Tt-4nn">
+                                <rect key="frame" x="20" y="30" width="280" height="415"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="udv-Ub-Rou">
+                                        <rect key="frame" x="0.0" y="0.0" width="280" height="100"/>
+                                        <subviews>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Pom-zJ-Oou">
+                                                <rect key="frame" x="0.0" y="0.0" width="240" height="100"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="fact1Label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MgC-iB-vv1">
+                                                        <rect key="frame" x="0.0" y="40" width="240" height="20"/>
+                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <fontDescription key="fontDescription" name=".SFNSText" family=".SF NS Text" pointSize="17"/>
+                                                        <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </view>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zya-Bq-VAL">
+                                                <rect key="frame" x="240" y="0.0" width="40" height="100"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="100" id="2qe-Jz-Xm6"/>
+                                                    <constraint firstAttribute="width" constant="40" id="U5b-vg-o3K"/>
+                                                </constraints>
+                                                <state key="normal" title="fact1UpButton" image="down_full"/>
+                                                <connections>
+                                                    <action selector="sendFactDown:" destination="FTe-IT-JO7" eventType="touchUpInside" id="c9A-AV-ACK"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TzA-ix-8Ou">
+                                        <rect key="frame" x="0.0" y="105" width="280" height="100"/>
+                                        <subviews>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bOO-ie-iYo">
+                                                <rect key="frame" x="0.0" y="0.0" width="240" height="100"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="fact2Label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XOY-Qd-r9L">
+                                                        <rect key="frame" x="0.0" y="40" width="240" height="20"/>
+                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <fontDescription key="fontDescription" name=".SFNSText" family=".SF NS Text" pointSize="17"/>
+                                                        <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </view>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="yHT-rB-nuo">
+                                                <rect key="frame" x="240" y="0.0" width="40" height="100"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0KM-Za-mAB">
+                                                        <rect key="frame" x="0.0" y="0.0" width="40" height="50"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="50" id="NRh-5j-ptz"/>
+                                                            <constraint firstAttribute="width" constant="40" id="d5a-Tw-boj"/>
+                                                        </constraints>
+                                                        <state key="normal" title="fact2UpButton" image="up_half"/>
+                                                        <connections>
+                                                            <action selector="sendFactUp:" destination="FTe-IT-JO7" eventType="touchUpInside" id="3Pq-wk-Teo"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1pY-Id-fqX">
+                                                        <rect key="frame" x="0.0" y="50" width="40" height="50"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" constant="40" id="dNa-B9-qSn"/>
+                                                            <constraint firstAttribute="height" constant="50" id="mUG-2f-pII"/>
+                                                        </constraints>
+                                                        <state key="normal" title="fact2DownButton" image="down_half"/>
+                                                        <connections>
+                                                            <action selector="sendFactDown:" destination="FTe-IT-JO7" eventType="touchUpInside" id="dLt-Fw-G1z"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="y38-Mm-yVl">
+                                        <rect key="frame" x="0.0" y="210" width="280" height="100"/>
+                                        <subviews>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nNw-EO-d2t">
+                                                <rect key="frame" x="0.0" y="0.0" width="240" height="100"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="fact3Label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EaP-T8-p7u">
+                                                        <rect key="frame" x="0.0" y="40" width="240" height="20"/>
+                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <fontDescription key="fontDescription" name=".SFNSText" family=".SF NS Text" pointSize="17"/>
+                                                        <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </view>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="GNs-Jy-YTS">
+                                                <rect key="frame" x="240" y="0.0" width="40" height="100"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WeI-pQ-BRU">
+                                                        <rect key="frame" x="0.0" y="0.0" width="40" height="50"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="50" id="M59-LH-WY7"/>
+                                                            <constraint firstAttribute="width" constant="40" id="f1S-kC-shs"/>
+                                                        </constraints>
+                                                        <state key="normal" title="fact3UpButton" image="up_half"/>
+                                                        <connections>
+                                                            <action selector="sendFactUp:" destination="FTe-IT-JO7" eventType="touchUpInside" id="k07-Ff-YAX"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Yig-yf-g3o">
+                                                        <rect key="frame" x="0.0" y="50" width="40" height="50"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" constant="40" id="IWn-SB-jQg"/>
+                                                            <constraint firstAttribute="height" constant="50" id="ale-b4-hu9"/>
+                                                        </constraints>
+                                                        <state key="normal" title="fact3DownButton" image="down_half"/>
+                                                        <connections>
+                                                            <action selector="sendFactDown:" destination="FTe-IT-JO7" eventType="touchUpInside" id="Wwf-a7-euf"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xMM-0o-d6o">
+                                        <rect key="frame" x="0.0" y="315" width="280" height="100"/>
+                                        <subviews>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2ll-HO-5bJ">
+                                                <rect key="frame" x="0.0" y="0.0" width="240" height="100"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="fact4Label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rCf-v1-lyX">
+                                                        <rect key="frame" x="0.0" y="40" width="240" height="20"/>
+                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <fontDescription key="fontDescription" name=".SFNSText" family=".SF NS Text" pointSize="17"/>
+                                                        <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </view>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZzB-FJ-U9f">
+                                                <rect key="frame" x="240" y="0.0" width="40" height="100"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="40" id="R0V-SE-cfv"/>
+                                                    <constraint firstAttribute="height" constant="100" id="pY8-sG-m8K"/>
+                                                </constraints>
+                                                <state key="normal" title="fact4DownButton" image="up_full"/>
+                                                <connections>
+                                                    <action selector="sendFactUp:" destination="FTe-IT-JO7" eventType="touchUpInside" id="tRh-k9-cVo"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="VkF-bW-epw">
+                                <rect key="frame" x="89" y="455" width="142.5" height="80.5"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nT3-AE-PI8">
+                                        <rect key="frame" x="30" y="0.0" width="83" height="60"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                        <state key="normal" title="0:35">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Shake to complete" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pHr-E3-VC4">
+                                        <rect key="frame" x="0.0" y="60" width="142.5" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" red="0.19665181636810303" green="0.53396576642990112" blue="0.6802217960357666" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="xgZ-NF-Ycf" firstAttribute="trailing" secondItem="dxt-Tt-4nn" secondAttribute="trailing" constant="20" id="6Ig-eq-0WZ"/>
+                            <constraint firstItem="VkF-bW-epw" firstAttribute="leading" secondItem="xgZ-NF-Ycf" secondAttribute="leading" constant="89" id="CHG-gz-vaz"/>
+                            <constraint firstItem="dxt-Tt-4nn" firstAttribute="top" secondItem="xgZ-NF-Ycf" secondAttribute="top" constant="10" id="DR9-c8-jzk"/>
+                            <constraint firstItem="VkF-bW-epw" firstAttribute="top" secondItem="dxt-Tt-4nn" secondAttribute="bottom" constant="10" id="IzB-Zc-8uv"/>
+                            <constraint firstItem="dxt-Tt-4nn" firstAttribute="leading" secondItem="xgZ-NF-Ycf" secondAttribute="leading" constant="20" id="wtA-rk-Pxy"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="xgZ-NF-Ycf"/>
+                    </view>
+                    <connections>
+                        <outlet property="fact1Label" destination="MgC-iB-vv1" id="bi1-7k-5a4"/>
+                        <outlet property="fact1UpButton" destination="Zya-Bq-VAL" id="0J7-Ir-c0m"/>
+                        <outlet property="fact1View" destination="Pom-zJ-Oou" id="DEQ-Ux-DgT"/>
+                        <outlet property="fact2DownButton" destination="1pY-Id-fqX" id="ed7-Ca-1xX"/>
+                        <outlet property="fact2Label" destination="XOY-Qd-r9L" id="LXf-jG-SQW"/>
+                        <outlet property="fact2UpButton" destination="0KM-Za-mAB" id="FIa-BS-xFg"/>
+                        <outlet property="fact2View" destination="bOO-ie-iYo" id="LHg-lX-JA8"/>
+                        <outlet property="fact3DownButton" destination="Yig-yf-g3o" id="jRM-Sc-cr2"/>
+                        <outlet property="fact3Label" destination="EaP-T8-p7u" id="KWy-qV-0bj"/>
+                        <outlet property="fact3UpButton" destination="WeI-pQ-BRU" id="Bpy-MK-uxV"/>
+                        <outlet property="fact3View" destination="nNw-EO-d2t" id="yuy-aw-llH"/>
+                        <outlet property="fact4DownButton" destination="ZzB-FJ-U9f" id="gXJ-5i-ip0"/>
+                        <outlet property="fact4Label" destination="rCf-v1-lyX" id="H9j-hE-zFY"/>
+                        <outlet property="fact4View" destination="2ll-HO-5bJ" id="HF3-Op-djQ"/>
+                        <outlet property="instructionLabel" destination="pHr-E3-VC4" id="eAn-tY-6GG"/>
+                        <outlet property="timerButton" destination="nT3-AE-PI8" id="KQB-Cv-aCk"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="PzG-xv-tNf" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="211.875" y="44.366197183098592"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="down_full" width="158" height="457"/>
+        <image name="down_half" width="158" height="229"/>
+        <image name="up_full" width="158" height="457"/>
+        <image name="up_half" width="158" height="229"/>
+    </resources>
+</document>
