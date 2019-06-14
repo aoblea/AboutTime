@@ -52,7 +52,6 @@ class GameViewController: UIViewController {
     setupDisplay()
 
     startGame()
-    
   }
   
   func setupDisplay() {
@@ -88,22 +87,22 @@ class GameViewController: UIViewController {
     fact1Label.translatesAutoresizingMaskIntoConstraints = false
     fact1Label.centerYAnchor.constraint(equalTo: fact1View.centerYAnchor).isActive = true
     fact1Label.leadingAnchor.constraint(equalTo: fact1View.leadingAnchor, constant: 20).isActive = true
-    fact1Label.trailingAnchor.constraint(equalTo: fact1View.trailingAnchor, constant: 0).isActive = true
+    fact1Label.trailingAnchor.constraint(equalTo: fact1View.trailingAnchor, constant: 20).isActive = true
     
     fact2Label.translatesAutoresizingMaskIntoConstraints = false
     fact2Label.centerYAnchor.constraint(equalTo: fact2View.centerYAnchor).isActive = true
     fact2Label.leadingAnchor.constraint(equalTo: fact2View.leadingAnchor, constant: 20).isActive = true
-    fact2Label.trailingAnchor.constraint(equalTo: fact2View.trailingAnchor, constant: 0).isActive = true
+    fact2Label.trailingAnchor.constraint(equalTo: fact2View.trailingAnchor, constant: 20).isActive = true
     
     fact3Label.translatesAutoresizingMaskIntoConstraints = false
     fact3Label.centerYAnchor.constraint(equalTo: fact3View.centerYAnchor).isActive = true
     fact3Label.leadingAnchor.constraint(equalTo: fact3View.leadingAnchor, constant: 20).isActive = true
-    fact3Label.trailingAnchor.constraint(equalTo: fact3View.trailingAnchor, constant: 0).isActive = true
+    fact3Label.trailingAnchor.constraint(equalTo: fact3View.trailingAnchor, constant: 20).isActive = true
     
     fact4Label.translatesAutoresizingMaskIntoConstraints = false
     fact4Label.centerYAnchor.constraint(equalTo: fact4View.centerYAnchor).isActive = true
     fact4Label.leadingAnchor.constraint(equalTo: fact4View.leadingAnchor, constant: 20).isActive = true
-    fact4Label.trailingAnchor.constraint(equalTo: fact4View.trailingAnchor, constant: 0).isActive = true
+    fact4Label.trailingAnchor.constraint(equalTo: fact4View.trailingAnchor, constant: 20).isActive = true
   }
   
   func startGame() {
