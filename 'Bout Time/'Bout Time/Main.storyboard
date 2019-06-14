@@ -10,10 +10,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Game View Controller-->
         <scene sceneID="Dnq-3Q-p6K">
             <objects>
-                <viewController id="FTe-IT-JO7" customClass="ViewController" customModule="_Bout_Time" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="FTe-IT-JO7" customClass="GameViewController" customModule="_Bout_Time" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="sTc-zw-qmS">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -38,7 +38,7 @@
                                                 </subviews>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             </view>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zya-Bq-VAL">
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zya-Bq-VAL" userLabel="Fact1 Down Button">
                                                 <rect key="frame" x="240" y="0.0" width="40" height="100"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="100" id="2qe-Jz-Xm6"/>
@@ -46,7 +46,7 @@
                                                 </constraints>
                                                 <state key="normal" title="fact1UpButton" image="down_full"/>
                                                 <connections>
-                                                    <action selector="sendFactDown:" destination="FTe-IT-JO7" eventType="touchUpInside" id="c9A-AV-ACK"/>
+                                                    <action selector="buttonTapped:" destination="FTe-IT-JO7" eventType="touchUpInside" id="3iH-ni-3af"/>
                                                 </connections>
                                             </button>
                                         </subviews>
@@ -79,7 +79,7 @@
                                                         </constraints>
                                                         <state key="normal" title="fact2UpButton" image="up_half"/>
                                                         <connections>
-                                                            <action selector="sendFactUp:" destination="FTe-IT-JO7" eventType="touchUpInside" id="3Pq-wk-Teo"/>
+                                                            <action selector="buttonTapped:" destination="FTe-IT-JO7" eventType="touchUpInside" id="IFZ-cP-HKm"/>
                                                         </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1pY-Id-fqX">
@@ -90,7 +90,7 @@
                                                         </constraints>
                                                         <state key="normal" title="fact2DownButton" image="down_half"/>
                                                         <connections>
-                                                            <action selector="sendFactDown:" destination="FTe-IT-JO7" eventType="touchUpInside" id="dLt-Fw-G1z"/>
+                                                            <action selector="buttonTapped:" destination="FTe-IT-JO7" eventType="touchUpInside" id="5yr-cJ-RNQ"/>
                                                         </connections>
                                                     </button>
                                                 </subviews>
@@ -125,7 +125,7 @@
                                                         </constraints>
                                                         <state key="normal" title="fact3UpButton" image="up_half"/>
                                                         <connections>
-                                                            <action selector="sendFactUp:" destination="FTe-IT-JO7" eventType="touchUpInside" id="k07-Ff-YAX"/>
+                                                            <action selector="buttonTapped:" destination="FTe-IT-JO7" eventType="touchUpInside" id="hqg-47-tDu"/>
                                                         </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Yig-yf-g3o">
@@ -136,7 +136,7 @@
                                                         </constraints>
                                                         <state key="normal" title="fact3DownButton" image="down_half"/>
                                                         <connections>
-                                                            <action selector="sendFactDown:" destination="FTe-IT-JO7" eventType="touchUpInside" id="Wwf-a7-euf"/>
+                                                            <action selector="buttonTapped:" destination="FTe-IT-JO7" eventType="touchUpInside" id="CbZ-QW-V5i"/>
                                                         </connections>
                                                     </button>
                                                 </subviews>
@@ -160,7 +160,7 @@
                                                 </subviews>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             </view>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZzB-FJ-U9f">
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZzB-FJ-U9f" userLabel="Fact4 Up Button">
                                                 <rect key="frame" x="240" y="0.0" width="40" height="100"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="40" id="R0V-SE-cfv"/>
@@ -168,45 +168,60 @@
                                                 </constraints>
                                                 <state key="normal" title="fact4DownButton" image="up_full"/>
                                                 <connections>
-                                                    <action selector="sendFactUp:" destination="FTe-IT-JO7" eventType="touchUpInside" id="tRh-k9-cVo"/>
+                                                    <action selector="buttonTapped:" destination="FTe-IT-JO7" eventType="touchUpInside" id="TdW-I4-V6N"/>
                                                 </connections>
                                             </button>
                                         </subviews>
                                     </stackView>
                                 </subviews>
                             </stackView>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="VkF-bW-epw">
-                                <rect key="frame" x="89" y="455" width="142.5" height="80.5"/>
-                                <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nT3-AE-PI8">
-                                        <rect key="frame" x="30" y="0.0" width="83" height="60"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="40"/>
-                                        <state key="normal" title="0:35">
-                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        </state>
-                                    </button>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Shake to complete" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pHr-E3-VC4">
-                                        <rect key="frame" x="0.0" y="60" width="142.5" height="20.5"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <color key="textColor" red="0.19665181636810303" green="0.53396576642990112" blue="0.6802217960357666" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                </subviews>
-                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OUK-sX-4lj" userLabel="Play Button">
+                                <rect key="frame" x="98" y="465" width="130" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="130" id="15J-bV-g49"/>
+                                    <constraint firstAttribute="height" constant="40" id="qyU-RF-nXO"/>
+                                </constraints>
+                                <connections>
+                                    <action selector="playButtonPressed:" destination="FTe-IT-JO7" eventType="touchUpInside" id="YVL-TW-CAh"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="d4n-QV-qto">
+                                <rect key="frame" x="110" y="455" width="100" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="MWY-lY-1KB"/>
+                                    <constraint firstAttribute="height" constant="60" id="f08-eF-51B"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Shake to complete" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pHr-E3-VC4">
+                                <rect key="frame" x="63" y="515" width="200" height="20.5"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="YjX-2A-NJl"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.19665181636810303" green="0.53396576642990112" blue="0.6802217960357666" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
+                            <constraint firstItem="d4n-QV-qto" firstAttribute="leading" secondItem="xgZ-NF-Ycf" secondAttribute="leading" constant="110" id="2w1-2R-bsY"/>
                             <constraint firstItem="xgZ-NF-Ycf" firstAttribute="trailing" secondItem="dxt-Tt-4nn" secondAttribute="trailing" constant="20" id="6Ig-eq-0WZ"/>
-                            <constraint firstItem="VkF-bW-epw" firstAttribute="leading" secondItem="xgZ-NF-Ycf" secondAttribute="leading" constant="89" id="CHG-gz-vaz"/>
                             <constraint firstItem="dxt-Tt-4nn" firstAttribute="top" secondItem="xgZ-NF-Ycf" secondAttribute="top" constant="10" id="DR9-c8-jzk"/>
-                            <constraint firstItem="VkF-bW-epw" firstAttribute="top" secondItem="dxt-Tt-4nn" secondAttribute="bottom" constant="10" id="IzB-Zc-8uv"/>
+                            <constraint firstItem="OUK-sX-4lj" firstAttribute="top" secondItem="dxt-Tt-4nn" secondAttribute="bottom" constant="20" id="MOt-GH-26A"/>
+                            <constraint firstItem="pHr-E3-VC4" firstAttribute="top" secondItem="OUK-sX-4lj" secondAttribute="bottom" constant="10" id="Ufr-AV-Vdx"/>
+                            <constraint firstItem="OUK-sX-4lj" firstAttribute="leading" secondItem="xgZ-NF-Ycf" secondAttribute="leading" constant="98" id="eAc-2Y-Qgh"/>
+                            <constraint firstItem="pHr-E3-VC4" firstAttribute="centerX" secondItem="OUK-sX-4lj" secondAttribute="centerX" id="q5W-kH-bek"/>
+                            <constraint firstItem="d4n-QV-qto" firstAttribute="top" secondItem="dxt-Tt-4nn" secondAttribute="bottom" constant="10" id="qS7-bX-03W"/>
                             <constraint firstItem="dxt-Tt-4nn" firstAttribute="leading" secondItem="xgZ-NF-Ycf" secondAttribute="leading" constant="20" id="wtA-rk-Pxy"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="xgZ-NF-Ycf"/>
                     </view>
                     <connections>
+                        <outlet property="fact1DownButton" destination="Zya-Bq-VAL" id="F4e-fq-RXY"/>
                         <outlet property="fact1Label" destination="MgC-iB-vv1" id="bi1-7k-5a4"/>
-                        <outlet property="fact1UpButton" destination="Zya-Bq-VAL" id="0J7-Ir-c0m"/>
                         <outlet property="fact1View" destination="Pom-zJ-Oou" id="DEQ-Ux-DgT"/>
                         <outlet property="fact2DownButton" destination="1pY-Id-fqX" id="ed7-Ca-1xX"/>
                         <outlet property="fact2Label" destination="XOY-Qd-r9L" id="LXf-jG-SQW"/>
@@ -216,11 +231,12 @@
                         <outlet property="fact3Label" destination="EaP-T8-p7u" id="KWy-qV-0bj"/>
                         <outlet property="fact3UpButton" destination="WeI-pQ-BRU" id="Bpy-MK-uxV"/>
                         <outlet property="fact3View" destination="nNw-EO-d2t" id="yuy-aw-llH"/>
-                        <outlet property="fact4DownButton" destination="ZzB-FJ-U9f" id="gXJ-5i-ip0"/>
                         <outlet property="fact4Label" destination="rCf-v1-lyX" id="H9j-hE-zFY"/>
+                        <outlet property="fact4UpButton" destination="ZzB-FJ-U9f" id="2PN-HK-KR0"/>
                         <outlet property="fact4View" destination="2ll-HO-5bJ" id="HF3-Op-djQ"/>
                         <outlet property="instructionLabel" destination="pHr-E3-VC4" id="eAn-tY-6GG"/>
-                        <outlet property="timerButton" destination="nT3-AE-PI8" id="KQB-Cv-aCk"/>
+                        <outlet property="playButton" destination="OUK-sX-4lj" id="cTV-dc-lCt"/>
+                        <outlet property="timerLabel" destination="d4n-QV-qto" id="hhU-Kf-CD1"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="PzG-xv-tNf" userLabel="First Responder" sceneMemberID="firstResponder"/>
