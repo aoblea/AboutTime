@@ -32,6 +32,8 @@ struct EventData {
   let event21 = Event(title: "Captain Marvel", link: "https://en.wikipedia.org/wiki/Captain_Marvel_(film)", date: "March 8, 2019")
   let event22 = Event(title: "Avengers: Endgame", link: "https://en.wikipedia.org/wiki/Avengers:_Endgame", date: "April 26, 2019")
   let event23 = Event(title: "Spider-Man: Far From Home", link: "https://en.wikipedia.org/wiki/Spider-Man:_Far_From_Home", date: "July 2, 2019")
+  let event24 = Event(title: "Stan Lee Dies", link: "https://en.wikipedia.org/wiki/Stan_Lee", date: "November 12, 2018")
+  let event25 = Event(title: "The Defenders", link: "https://en.wikipedia.org/wiki/The_Defenders_(miniseries)", date: "August 18, 2017")
 }
 
 protocol Events {

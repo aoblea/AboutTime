@@ -35,7 +35,7 @@ class GameManager: Events, GameColors {
   
   // MARK: - Methods
   func populateEventsArray() -> [Event] {
-    events = [eventData.event1, eventData.event2, eventData.event3, eventData.event4, eventData.event5, eventData.event6, eventData.event7, eventData.event8, eventData.event9, eventData.event10, eventData.event11, eventData.event12, eventData.event13, eventData.event14, eventData.event15, eventData.event16, eventData.event17, eventData.event18, eventData.event19, eventData.event20 , eventData.event21, eventData.event22, eventData.event23]
+    events = [eventData.event1, eventData.event2, eventData.event3, eventData.event4, eventData.event5, eventData.event6, eventData.event7, eventData.event8, eventData.event9, eventData.event10, eventData.event11, eventData.event12, eventData.event13, eventData.event14, eventData.event15, eventData.event16, eventData.event17, eventData.event18, eventData.event19, eventData.event20 , eventData.event21, eventData.event22, eventData.event23, eventData.event24, eventData.event25]
     return events
   }
   

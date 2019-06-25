@@ -8,13 +8,7 @@
 
 import Foundation
 
-protocol Eventable {
-  var title: String { get }
-  var link: String { get }
-  var date: String { get }
-}
-
-struct Event: Eventable {
+struct Event {
   let title: String
   let link: String
   let date: String
@@ -49,6 +43,8 @@ enum EventSelection: String, CaseIterable {
   case event21
   case event22
   case event23
+  case event24
+  case event25
 }
 
 

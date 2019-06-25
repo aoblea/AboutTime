@@ -272,7 +272,7 @@ class GameViewController: UIViewController {
   }
   
   @IBAction func playButtonPressed(_ sender: UIButton) {
-    if game.rounds == 3 {
+    if game.rounds == 6 {
       presentScoreViewController()
       resetGame()
     } else {
